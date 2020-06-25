@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @FeignClient(name="OrderService" )
 public interface OderServiceControllerProxy {
 	
-	   @RequestMapping("/employee/findall")
+	   @RequestMapping("/Order/createOrder")
 	   public String  createOderDetails();
 
 }
