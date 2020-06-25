@@ -24,7 +24,7 @@ import com.dbs.service.orderservice.domain.OrderServiceException;
 import com.dbs.service.orderservice.service.OrderService;
 
 @RestController
-@RequestMapping("/Orderservice")
+@RequestMapping("/")
 public class OrderServiceController {
 	
 	@Autowired OrderService orderService;
