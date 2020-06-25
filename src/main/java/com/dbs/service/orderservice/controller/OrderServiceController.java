@@ -29,7 +29,7 @@ public class OrderServiceController {
 	
 	@Autowired OrderService orderService;
 	
-	@PostMapping(value="/createOder",produces= {MediaType.APPLICATION_JSON_VALUE})
+	@PostMapping(value="/feign/createService",produces= {MediaType.APPLICATION_JSON_VALUE})
 	public String createOderDetails(@Valid @RequestBody OrderRequest request,BindingResult result) throws OrderServiceException{
 		if(result.hasErrors()) {
 			throw new OrderServiceException(HttpStatus.BAD_REQUEST, "Bad Request");
